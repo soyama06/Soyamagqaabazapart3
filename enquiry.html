@@ -2,102 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crown Care Studio - Enquiry</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="enquiry.css">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body bgcolor="white">
 
-<!-- ==================== HEADER / NAVIGATION ==================== -->
-<table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="white">
-    <tr>
-        <td align="center">
-            <table width="90%" border="0" cellpadding="10" cellspacing="0">
-                <tr>
-                    <td width="20%" align="left">
-                        <img src="images/logo.png" alt="Crown Care Studio Logo" width="80" height="80">
-                        <br><font size="3"><strong>Crown Care Studio</strong></font>
-                    
-    
-                    <td width="80%" align="right">
-                        <a href="index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="about.html">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="services.html">Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="booking.html">Booking</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="contact.html">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="enquiry.html">Enquiry</a>
-                    
-    
-                
-    
-            
-    
-        
-    
-    
+<body>
 
+<header class="header">
+    <div class="container navbar">
 
+        <div class="logo">
+            <img src="images/logo.jpeg">
+            <h1>Crown Care Studio</h1>
+        </div>
 
-<!-- ==================== MAIN CONTENT ==================== -->
-<h1 align="center">Send Us an Enquiry</h1>
-<hr width="50%">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
 
-<p align="center">Have a question about our services, pricing, or availability? Fill out the form below and we'll get back to you within 24 hours.</p>
+    </div>
+</header>
 
-<form action="#" method="post">
-    <table align="center" width="55%" border="0" cellpadding="10" bgcolor="white">
-        <tr>
-            <td width="35%"><strong>Full Name:</strong></td>
-            <td><input type="text" name="fullname" size="45" required></td>
-        </tr>
-        <tr>
-            <td><strong>Email Address:</strong></td>
-            <td><input type="email" name="email" size="45" required></td>
-        </tr>
-        <tr>
-            <td><strong>Phone Number:</strong></td>
-            <td><input type="tel" name="phone" size="45"></td>
-        </tr>
-        <tr>
-            <td><strong>Subject:</strong></td>
-            <td>
-                <select name="subject">
+<main class="main-content container">
+
+    <h1>Send an Enquiry</h1>
+    <p style="text-align:center;">We respond within 24 hours</p>
+
+    <div class="form-container">
+
+        <form>
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="tel">
+            </div>
+
+            <div class="form-group">
+                <label>Subject</label>
+                <select>
                     <option>General Inquiry</option>
-                    <option>Service Information</option>
-                    <option>Pricing Question</option>
-                    <option>Booking Assistance</option>
-                    <option>Other</option>
+                    <option>Pricing</option>
+                    <option>Booking Help</option>
+                    <option>Services</option>
                 </select>
-            
-    
-        </tr>
-        <tr>
-            <td valign="top"><strong>Your Message:</strong></td>
-            <td><textarea rows="6" cols="40" placeholder="Type your question or message here..."></textarea></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <input type="submit" value="Send Enquiry">
-                <input type="reset" value="Clear Form">
-            </td>
-        </tr>
-    </table>
-</form>
+            </div>
 
-<p align="center">📞 Prefer to call? Reach us at <strong>071 508 8090</strong> during business hours.</p>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea rows="5"></textarea>
+            </div>
 
-<!-- ==================== FOOTER ==================== -->
-<br><br>
-<table width="100%" border="0" cellpadding="15" cellspacing="0" bgcolor="white">
-    <tr>
-        <td align="center">
-            <hr width="80%">
-            <font size="2">2025 Crown Care Studio. All rights reserved.</font>
-        
-    
-    </tr>
-</table>
+            <button class="btn-primary" type="submit">Send</button>
+            <button class="btn-secondary" type="reset">Clear</button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    © 2025 Crown Care Studio
+</footer>
 
 </body>
 </html>

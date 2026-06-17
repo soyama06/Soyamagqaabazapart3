@@ -2,120 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crown Care Studio - Booking</title>
-    <link rel="stylesheet" href="style.css"
-    <link rel="stylesheet" href="booking.css">
+    <title>Booking</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body bgcolor="white">
 
-<!-- ==================== HEADER / NAVIGATION ==================== -->
-<table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="white">
-    <tr>
-        <td align="center">
-            <table width="90%" border="0" cellpadding="10" cellspacing="0">
-                <tr>
-                    <td width="20%" align="left">
-                        <img src="images/logo.jpeg" alt="Crown Care Studio Logo" width="80" height="80">
-                        <br><font size="3"><strong>Crown Care Studio</strong></font>
-                    
-    
-                    <td width="80%" align="right">
-                        <a href="index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="about.html">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="services.html">Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="booking.html">Booking</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="contact.html">Contact</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="enquiry.html">Enquiry</a>
-                    
-    
-                
-    
-            
-    
-        
-    
-    
+<body>
 
+<header class="header">
+    <div class="container navbar">
 
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="logo">
+            <h1>Crown Care Studio</h1>
+        </div>
 
-<!-- ==================== MAIN CONTENT ==================== -->
-<h1 align="center">Book an Appointment</h1>
-<hr width="50%">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
 
-<p align="center">Please fill out the form below to reserve your spot. We'll confirm your booking within 24 hours.</p>
+    </div>
+</header>
 
-<form action="#" method="post">
-    <table align="center" width="55%" border="0" cellpadding="10" bgcolor="white">
-        <tr>
-            <td width="35%"><strong>Full Name:</strong></td>
-            <td><input type="text" name="name" size="40" required></td>
-        </tr>
-        <tr>
-            <td><strong>Phone Number:</strong></td>
-            <td><input type="tel" name="phone" size="40" required></td>
-        </tr>
-        <tr>
-            <td><strong>Email Address:</strong></td>
-            <td><input type="email" name="email" size="40"></td>
-        </tr>
-        <tr>
-            <td><strong>Select Service:</strong></td>
-            <td>
-                <select name="service">
-                    <option>Basic wash & condition (R150)</option>
-                    <option>Deep treatment (R250)</option>
-                    <option>Full revamp (R280-R800)</option>
+<main class="main-content container">
+
+    <h1>Book an Appointment</h1>
+    <p style="text-align:center;">Fill in the form below and we will confirm your booking.</p>
+
+    <div class="form-container">
+
+        <form>
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email">
+            </div>
+
+            <div class="form-group">
+                <label>Service</label>
+                <select>
+                    <option>Basic Wash & Condition</option>
+                    <option>Deep Treatment</option>
+                    <option>Full Revamp</option>
                 </select>
-            
-    
-        </tr>
-        <tr>
-            <td><strong>Preferred Date:</strong></td>
-            <td><input type="date" name="date"></td>
-        </tr>
-        <tr>
-            <td><strong>Preferred Time:</strong></td>
-            <td>
-                <select name="time">
-                    <option>09:00 AM</option>
-                    <option>10:00 AM</option>
-                    <option>11:00 AM</option>
-                    <option>12:00 PM</option>
-                    <option>01:00 PM</option>
-                    <option>02:00 PM</option>
-                    <option>03:00 PM</option>
-                    <option>04:00 PM</option>
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Time</label>
+                <select>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
                 </select>
-            
-    
-        </tr>
-        <tr>
-            <td valign="top"><strong>Special Requests:</strong></td>
-            <td><textarea rows="3" cols="35" placeholder="Any allergies or special instructions..."></textarea></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <input type="submit" value="Request Booking">
-                <input type="reset" value="Clear Form">
-            </td>
-        </tr>
-    </table>
-</form>
+            </div>
 
-<p align="center">📞 Or call us directly at <strong>071 508 8090</strong> to book over the phone.</p>
+            <div class="form-group">
+                <label>Special Requests</label>
+                <textarea rows="4"></textarea>
+            </div>
 
-<!-- ==================== FOOTER ==================== -->
-<br><br>
-<table width="100%" border="0" cellpadding="15" cellspacing="0" bgcolor="white">
-    <tr>
-        <td align="center">
-            <hr width="80%">
-            <font size="2">2025 Crown Care Studio. All rights reserved.</font>
-        
-    
-    </tr>
-</table>
+            <button class="btn-primary" type="submit">Book Now</button>
+            <button class="btn-secondary" type="reset">Clear</button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    © 2025 Crown Care Studio
+</footer>
 
 </body>
 </html>
